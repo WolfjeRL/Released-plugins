@@ -42,7 +42,7 @@ public class QuestNavigatorPlugin extends Plugin
 		if (config.questnavigator1())
 		{
 			// do stuff
-			log.info("The value of 'config.example()' is ${config.example()}");
+			log.info("The value of 'config.questnavigator33()' is ${config.questnavigator33()}");
 		}
 	}
 
@@ -53,10 +53,10 @@ public class QuestNavigatorPlugin extends Plugin
 		log.info("Plugin stopped");
 	}
 
-	@Subscribe
-	private void onGameTick(GameTick gameTick)
-	{
-		// runs every gametick
-		log.info("Gametick");
-	}
+//	@Subscribe
+//	private void onGameTick(GameTick gameTick)
+//	{
+//		// runs every gametick
+//		log.info("Gametick");
+//	}
 }
