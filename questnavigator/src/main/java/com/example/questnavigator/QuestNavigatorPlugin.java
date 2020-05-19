@@ -14,8 +14,8 @@ import javax.inject.Inject;
 
 @Extension
 @PluginDescriptor(
-	name = "Java example",
-	description = "Java example",
+	name = "Quest navigator",
+	description = "Quest navigator",
 	type = PluginType.MISCELLANEOUS
 )
 @Slf4j

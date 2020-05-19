@@ -33,9 +33,9 @@ import net.runelite.client.config.ConfigItem;
 public interface QuestNavigatorConfig extends Config
 {
 	@ConfigItem(
-		keyName = "example",
-		name = "Example config item",
-		description = "Example",
+		keyName = "questnavigator1",
+		name = "Quest Navigator2",
+		description = "Used to navigate in quests3",
 		position = 0
 	)
 	default boolean example()
