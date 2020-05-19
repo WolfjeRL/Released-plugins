@@ -39,7 +39,7 @@ public class QuestNavigatorPlugin extends Plugin
 		log.info("Plugin started");
 
 		// example how to use config items
-		if (config.example())
+		if (config.questnavigator1())
 		{
 			// do stuff
 			log.info("The value of 'config.example()' is ${config.example()}");

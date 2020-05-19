@@ -38,8 +38,16 @@ public interface QuestNavigatorConfig extends Config
 		description = "Used to navigate in quests3",
 		position = 0
 	)
-	default boolean example()
+	default boolean questnavigator1() {return true; }
+
+	@ConfigItem(
+			keyName = "questnavigator33",
+			name = "Quest Navigator2",
+			description = "Used to navigate in quests3",
+			position = 0
+	)
+	default String questnavigator33()
 	{
-		return true;
+		return "jemoeder";
 	}
 }
