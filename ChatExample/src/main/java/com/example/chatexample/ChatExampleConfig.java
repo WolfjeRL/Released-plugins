@@ -38,7 +38,7 @@ public interface ChatExampleConfig extends Config
 		description = "Chat Example",
 		position = 0
 	)
-	default boolean example()
+	default boolean chatexample()
 	{
 		return true;
 	}

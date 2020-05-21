@@ -39,7 +39,7 @@ public class ChatExamplePlugin extends Plugin
 		log.info("Plugin started");
 
 		// example how to use config items
-		if (config.example())
+		if (config.chatexample())
 		{
 			// do stuff
 			log.info("The value of 'config.example()' is ${config.example()}");
