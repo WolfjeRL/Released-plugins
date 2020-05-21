@@ -22,20 +22,20 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.example.javaexample;
+package com.example.chatexample;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("JavaExampleConfig")
+@ConfigGroup("ChatExampleConfig")
 
-public interface JavaExampleConfig extends Config
+public interface ChatExampleConfig extends Config
 {
 	@ConfigItem(
-		keyName = "example",
-		name = "Example config item",
-		description = "Example",
+		keyName = "chatexample",
+		name = "Chat Example config item",
+		description = "Chat Example",
 		position = 0
 	)
 	default boolean example()

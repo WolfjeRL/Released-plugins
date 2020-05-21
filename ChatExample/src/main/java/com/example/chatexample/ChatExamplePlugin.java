@@ -1,4 +1,4 @@
-package com.example.questnavigator;
+package com.example.chatexample;
 
 import com.google.inject.Provides;
 import lombok.extern.slf4j.Slf4j;
@@ -14,22 +14,22 @@ import javax.inject.Inject;
 
 @Extension
 @PluginDescriptor(
-	name = "Quest navigator",
-	description = "Quest navigator",
+	name = "Chat example",
+	description = "Chat example",
 	type = PluginType.MISCELLANEOUS
 )
 @Slf4j
-public class QuestNavigatorPlugin extends Plugin
+public class ChatExamplePlugin extends Plugin
 {
 	// Injects our config
 	@Inject
-	private QuestNavigatorConfig config;
+	private ChatExampleConfig config;
 
 	// Provides our config
 	@Provides
-	QuestNavigatorConfig provideConfig(ConfigManager configManager)
+	ChatExampleConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(QuestNavigatorConfig.class);
+		return configManager.getConfig(ChatExampleConfig.class);
 	}
 
 	@Override
@@ -39,10 +39,10 @@ public class QuestNavigatorPlugin extends Plugin
 		log.info("Plugin started");
 
 		// example how to use config items
-		if (config.questnavigator1())
+		if (config.example())
 		{
 			// do stuff
-			log.info("The value of 'config.questnavigator33()' is ${config.questnavigator33()}");
+			log.info("The value of 'config.example()' is ${config.example()}");
 		}
 	}
 
@@ -53,10 +53,10 @@ public class QuestNavigatorPlugin extends Plugin
 		log.info("Plugin stopped");
 	}
 
-//	@Subscribe
-//	private void onGameTick(GameTick gameTick)
-//	{
-//		// runs every gametick
-//		log.info("Gametick");
-//	}
+	@Subscribe
+	private void onGameTick(GameTick gameTick)
+	{
+		// runs every gametick
+		log.info("Gametick");
+	}
 }

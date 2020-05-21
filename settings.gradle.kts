@@ -27,7 +27,7 @@ rootProject.name = "external plugins example"
 
 include(":kotlinexample")
 include(":javaexample")
-include(":questnavigator")
+include(":chatexample")
 
 for (project in rootProject.children) {
     project.apply {

@@ -35,6 +35,8 @@ object Libraries {
         const val lombok = "1.18.10"
         const val pf4j = "3.2.0"
         const val slf4j = "1.7.30"
+        const val apacheCommonsText = "1.8"
+
     }
 
     const val guice = "com.google.inject:guice:${Versions.guice}:no_aop"
@@ -42,5 +44,5 @@ object Libraries {
     const val lombok = "org.projectlombok:lombok:${Versions.lombok}"
     const val pf4j = "org.pf4j:pf4j:${Versions.pf4j}"
     const val slf4j = "org.slf4j:slf4j-api:${Versions.slf4j}"
-
+    const val apacheCommonsText = "org.apache.commons:commons-text:${Versions.apacheCommonsText}"
 }

@@ -1,4 +1,4 @@
-package com.example.javaexample;
+package com.example.chatexample;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
